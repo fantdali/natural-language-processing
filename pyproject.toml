@@ -5,22 +5,13 @@ description = ""
 authors = [{ name = "lwtztea", email = "luneva.na@phystech.edu" }]
 readme = "README.md"
 requires-python = ">=3.10"
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry]
-package-mode = false
-
-[tool.poetry.group.dev.dependencies]
-black = { extras = ["jupyter"], version = "^25.1.0" }
-pylint = "^3.3.5"
-unify = "^0.5"
-isort = "^6.0.1"
-flake8 = "^7.1.2"
-jupyterlab-flake8 = "^0.7.1"
-nbqa = "^1.9.1"
-yapf = "^0.43.0"
-mdformat = "^0.7.22"
-ruff = "^0.9.10"
+dependencies = [
+    "bokeh>=3.8.0",
+    "gensim>=4.3.3",
+    "matplotlib>=3.10.7",
+    "nltk>=3.9.2",
+    "numpy<2.0",
+    "scipy<1.14",
+    "umap>=0.1.1",
+    "umap-learn>=0.5.9.post2",
+]
